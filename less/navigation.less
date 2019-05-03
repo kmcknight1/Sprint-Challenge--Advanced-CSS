@@ -13,8 +13,12 @@
   .nav-container {
     height: 100%;
     .center();
-
     flex-flow: column nowrap;
+
+    @media @phone {
+      justify-content: center;
+      padding: 12px;
+    }
 
     .logo-heading {
       color: darken(@header-font-color, 20%);
@@ -28,6 +32,10 @@
       display: flex;
       justify-content: space-between;
       margin-top: 1.5rem;
+
+      @media @phone {
+        width: 80%;
+      }
 
       a {
         color: darken(@nav-font, 20%);
