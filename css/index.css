@@ -318,6 +318,7 @@ footer {
   padding: 50px 60px;
   display: flex;
   justify-content: center;
+  border-bottom: 1px solid #dee2e6;
 }
 @media (max-width: 500px) {
   .home .walk {
@@ -401,4 +402,73 @@ footer {
   width: 100%;
   height: auto;
   border-radius: 10px;
+}
+form {
+  margin-top: 4%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+form .fields {
+  width: 100%;
+}
+form .fields .field {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+form .fields .field label {
+  margin: 1.3%;
+  font-size: 2rem;
+  color: #23293b;
+  font-family: "Russo One", sans-serif;
+}
+form .fields .field input {
+  border: 1.5px solid #5e6164;
+  border-radius: 5px;
+  width: 80%;
+  height: 3rem;
+  font-family: "Ubuntu", sans-serif;
+  color: #5e6164;
+  font-size: 1.6rem;
+  line-height: 1.4;
+  text-align: center;
+}
+form .fields .field textarea {
+  width: 80%;
+  height: 200px;
+  border-radius: 5px;
+  font-family: "Ubuntu", sans-serif;
+  color: #5e6164;
+  font-size: 1.6rem;
+  line-height: 1.4;
+  text-align: center;
+  border: 1.5px solid #5e6164;
+}
+form .actions {
+  margin: 1.5% 0% 1.5% 0%;
+}
+form .actions li input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  width: 200px;
+  height: 45px;
+  background-color: #22283a;
+  color: #f6f7f8;
+  cursor: pointer;
+  font-size: 1.6rem;
+}
+@media (max-width: 500px) {
+  form .actions li input {
+    width: 100%;
+  }
+}
+form .actions li input:hover {
+  background: #f6f6f6;
+  color: #22283a;
+  border: 2px solid #22283a;
 }
